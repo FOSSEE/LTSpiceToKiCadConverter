@@ -138,7 +138,7 @@ If all the libraries in eeschema are not loaded, follow these steps:
 6. Close the dialog box.
 -----------------------------------------------
 
-### Warning!
+## Warning!
 - All required libraries SHOULD be added.
 - Use proper file format.
 - DO NOT TRY TO CONVERT library file as schematic file or vice versa.
