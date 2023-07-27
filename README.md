@@ -10,7 +10,7 @@ The repository also contains program to convert LTSpice symbol files(.asy) to Ki
 
 The code is supported by both Windows and Ubuntu(and flavors) Operating System.
 
------------------------------------------------
+
 ## Cloning the repo:
 
 To start with, please clone the repository:
@@ -20,7 +20,6 @@ git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
 
 ## Windows OS
 
------------------------------------------------
 ### To Convert the Schematic file
 
 1. Make sure python3 is installed and added to the path
@@ -53,7 +52,7 @@ For example: LTspice_DAC.lib
 
 
 ## Ubuntu OS
------------------------------------------------
+
 ### To Convert the Schematic file
 
 1. Make sure python3 is installed and added to the path
@@ -89,20 +88,19 @@ For example: LTspice_DAC.lib
 The Example LTspice Schematics(.asc) and Symbol Libraries(.asy) are available in the LTspice software.
 
 Please download the software from the official website.
------------------------------------------------
-### Converted KiCad Schematics(.sch, .pro, .proj)
+
+## Converted KiCad Schematics(.sch, .pro, .proj)
 The converted examples are available here.
 
------------------------------------------------
-### Converted KiCad Schematics with eSim Simulation Plots
+
+## Converted KiCad Schematics with eSim Simulation Plots
 The Converted KiCad Schematics with eSim Simulation Plots are available here.
 
------------------------------------------------
-### Converted KiCad Symbol Library files(.lib)
+## Converted KiCad Symbol Library files(.lib)
 The converted KiCad Symbol Library files are available here.
 
------------------------------------------------
-### Important Notes/Commands
+
+## Important Notes/Commands
 **To change the access of the file and folder**
 
 Use this command to change access to the files:
