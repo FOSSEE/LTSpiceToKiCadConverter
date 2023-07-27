@@ -1,0 +1,392 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+#   and
+#  Behavioral AND gate
+# SpiceModel :  AND
+#
+DEF and A 0 1 N N 1 F N
+F0 "A" 50 -75 50 H V L CNN
+F1 "and" 50 -350 50 H V L CNN
+DRAW
+P 2 0 0 0 -100 -100 -37 -100
+P 2 0 0 0 -100 -300 -37 -300
+P 2 0 0 0 -100 -300 -100 -100
+P 2 0 0 0 50 -150 100 -150
+C 75 -250 25 0 0 0 N
+A -37 -200 100 0 900 0 0 0 N -37 -300 -37 -100
+X a  1 -100 -100 0 N 50 50 1 1 U
+X b  2 -100 -150 0 N 50 50 1 1 U
+X c  3 -100 -200 0 N 50 50 1 1 U
+X d  4 -100 -250 0 N 50 50 1 1 U
+X e  5 -100 -300 0 N 50 50 1 1 U
+X _Q  6 100 -250 0 N 50 50 1 1 U
+X Q  7 100 -150 0 N 50 50 1 1 U
+X com  8 -50 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   buf
+#  Behavioral buffer with complementary outputs
+# SpiceModel :  BUF
+#
+DEF buf A 0 1 N N 1 F N
+F0 "A" 25 -50 50 H V L CNN
+F1 "buf" 25 -375 50 H V L CNN
+DRAW
+P 2 0 0 0 0 -100 200 -200
+P 2 0 0 0 0 -300 200 -200
+P 2 0 0 0 100 -150 200 -150
+P 2 0 0 0 0 -300 0 -100
+P 2 0 0 0 200 -250 187 -250
+C 162 -250 25 0 0 0 N
+X in  1 0 -200 0 N 50 50 1 1 U
+X _Q  6 200 -250 0 N 50 50 1 1 U
+X Q  7 200 -150 0 N 50 50 1 1 U
+X com  8 0 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   buf1
+#  Behavioral buffer
+# SpiceModel :  BUF
+#
+DEF buf1 A 0 1 N N 1 F N
+F0 "A" 25 -100 50 H V L CNN
+F1 "buf1" 25 -325 50 H V L CNN
+DRAW
+P 2 0 0 0 0 -150 125 -200
+P 2 0 0 0 0 -250 125 -200
+P 2 0 0 0 0 -250 0 -150
+P 2 0 0 0 125 -200 200 -200
+X in  1 0 -200 0 N 50 50 1 1 U
+X Q  7 200 -200 0 N 50 50 1 1 U
+X com  8 0 -250 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   counter
+#  Behavioral counter
+# SpiceModel :  COUNTER
+#
+DEF counter A 0 1 N N 1 F N
+F0 "A" -200 250 50 H V L CNN
+F1 "counter" -200 -475 50 H V L CNN
+DRAW
+P 2 0 0 0 -250 -75 -225 -100
+P 2 0 0 0 -250 -125 -225 -100
+P 2 0 0 0 -250 200 450 200
+P 2 0 0 0 -250 200 -250 -400
+P 2 0 0 0 -250 -400 450 -400
+P 2 0 0 0 450 -400 450 200
+X CLK  1 -250 -100 0 R 50 50 1 1 U
+X Phi2  6 450 -200 0 L 50 50 1 1 U
+X Phi1  7 450 0 0 L 50 50 1 1 U
+X com  8 -250 -400 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   dflop
+#  Behavioral D-flipflop
+# SpiceModel :  DFLOP
+#
+DEF dflop A 0 1 N N 1 F N
+F0 "A" 25 50 50 H V L CNN
+F1 "dflop" 25 -525 50 H V L CNN
+DRAW
+P 2 0 0 0 -250 0 250 0
+P 2 0 0 0 -250 0 -250 -450
+P 2 0 0 0 -250 -450 250 -450
+P 2 0 0 0 250 -450 250 0
+P 2 0 0 0 -250 -275 -225 -300
+P 2 0 0 0 -250 -325 -225 -300
+C 275 -300 25 0 0 0 N
+X D  1 -250 -150 0 R 50 50 1 1 U
+X CLK  3 -250 -300 0 R 50 50 1 1 U
+X PRE  4 0 0 0 D 50 50 1 1 U
+X CLR  5 0 -450 0 U 50 50 1 1 U
+X _Q  6 300 -300 0 L 50 50 1 1 U
+X Q  7 250 -150 0 L 50 50 1 1 U
+X com  8 -250 -450 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   diffschmitt
+#  Behavioral Schmitt-Triggered Buffer with Complementary Outs and Differential Input
+# SpiceModel :  SCHMITT
+#
+DEF diffschmitt A 0 1 N N 1 F N
+F0 "A" 25 -50 50 H V L CNN
+F1 "diffschmitt" 25 -375 50 H V L CNN
+DRAW
+P 2 0 0 0 25 -225 50 -225
+P 2 0 0 0 37 -175 62 -175
+P 2 0 0 0 37 -225 37 -175
+P 2 0 0 0 50 -225 50 -175
+P 2 0 0 0 0 -100 200 -200
+P 2 0 0 0 0 -300 200 -200
+P 2 0 0 0 100 -150 200 -150
+P 2 0 0 0 0 -300 0 -100
+P 2 0 0 0 200 -250 187 -250
+P 2 0 0 0 12 -150 37 -150
+P 2 0 0 0 25 -137 25 -162
+P 2 0 0 0 12 -250 37 -250
+C 162 -250 25 0 0 0 N
+X in+  1 0 -150 0 N 50 50 1 1 U
+X in-  2 0 -250 0 N 50 50 1 1 U
+X _Q  6 200 -250 0 N 50 50 1 1 U
+X Q  7 200 -150 0 N 50 50 1 1 U
+X com  8 0 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   diffschmtbuf
+#  Behavioral Schmitt-Triggered Buffer with Differential Input
+# SpiceModel :  SCHMITT
+#
+DEF diffschmtbuf A 0 1 N N 1 F N
+F0 "A" 25 -50 50 H V L CNN
+F1 "diffschmtbuf" 25 -375 50 H V L CNN
+DRAW
+P 2 0 0 0 25 -225 50 -225
+P 2 0 0 0 37 -175 62 -175
+P 2 0 0 0 37 -225 37 -175
+P 2 0 0 0 50 -225 50 -175
+P 2 0 0 0 0 -100 200 -200
+P 2 0 0 0 0 -300 200 -200
+P 2 0 0 0 0 -300 0 -100
+P 2 0 0 0 12 -150 37 -150
+P 2 0 0 0 25 -137 25 -162
+P 2 0 0 0 12 -250 37 -250
+X in+  1 0 -150 0 N 50 50 1 1 U
+X in-  2 0 -250 0 N 50 50 1 1 U
+X Q  7 200 -200 0 N 50 50 1 1 U
+X com  8 0 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   diffschmtinv
+#  Behavioral Schmitt-Triggered Inverter with Differential Input
+# SpiceModel :  SCHMITT
+#
+DEF diffschmtinv A 0 1 N N 1 F N
+F0 "A" 25 -50 50 H V L CNN
+F1 "diffschmtinv" 25 -375 50 H V L CNN
+DRAW
+P 2 0 0 0 25 -225 50 -225
+P 2 0 0 0 37 -175 62 -175
+P 2 0 0 0 37 -225 37 -175
+P 2 0 0 0 50 -225 50 -175
+P 2 0 0 0 0 -100 137 -200
+P 2 0 0 0 0 -300 137 -200
+P 2 0 0 0 187 -200 200 -200
+P 2 0 0 0 0 -300 0 -100
+P 2 0 0 0 12 -150 37 -150
+P 2 0 0 0 25 -137 25 -162
+P 2 0 0 0 12 -250 37 -250
+C 162 -200 25 0 0 0 N
+X in+  1 0 -150 0 N 50 50 1 1 U
+X in-  2 0 -250 0 N 50 50 1 1 U
+X _Q  6 200 -200 0 N 50 50 1 1 U
+X com  8 0 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   inv
+#  Behavioral Inverter
+# SpiceModel :  BUF
+#
+DEF inv A 0 1 N N 1 F N
+F0 "A" 25 -100 50 H V L CNN
+F1 "inv" 25 -325 50 H V L CNN
+DRAW
+P 2 0 0 0 0 -150 125 -200
+P 2 0 0 0 0 -250 125 -200
+P 2 0 0 0 0 -250 0 -150
+P 2 0 0 0 175 -200 200 -200
+C 150 -200 25 0 0 0 N
+X in  1 0 -200 0 N 50 50 1 1 U
+X _Q  6 200 -200 0 N 50 50 1 1 U
+X com  8 0 -250 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   or
+#  Behavioral OR gate with complementary outputs
+# SpiceModel :  OR
+#
+DEF or A 0 1 N N 1 F N
+F0 "A" -25 -25 50 H V L CNN
+F1 "or" -25 -400 50 H V L CNN
+DRAW
+P 2 0 0 0 -100 -100 -87 -100
+P 2 0 0 0 -100 -300 -87 -300
+P 2 0 0 0 37 -150 100 -150
+P 2 0 0 0 -100 -250 -75 -250
+P 2 0 0 0 -100 -200 -62 -200
+P 2 0 0 0 -100 -150 -75 -150
+C 75 -250 25 0 0 0 N
+A -237 -200 175 0 900 0 0 0 N -100 -300 -100 -100
+A -81 -131 168 0 900 0 0 0 N -87 -300 75 -200
+A -81 -268 168 0 900 0 0 0 N 75 -200 -87 -100
+X a  1 -100 -100 0 N 50 50 1 1 U
+X b  2 -100 -150 0 N 50 50 1 1 U
+X c  3 -100 -200 0 N 50 50 1 1 U
+X d  4 -100 -250 0 N 50 50 1 1 U
+X e  5 -100 -300 0 N 50 50 1 1 U
+X _Q  6 100 -250 0 N 50 50 1 1 U
+X Q  7 100 -150 0 N 50 50 1 1 U
+X com  8 -50 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   phidet
+#  Behavioral Type 3/4 Phase Detector (phase/frequency detector).  NOTE: Limit input rise times
+# SpiceModel :  PHASEDET
+#
+DEF phidet A 0 1 N N 1 F N
+F0 "A" 25 200 50 H V C CNN
+F1 "phidet" 0 -200 50 H V L CNN
+DRAW
+P 2 0 0 0 -100 75 -75 50
+P 2 0 0 0 -100 25 -75 50
+P 2 0 0 0 -100 -75 -75 -50
+P 2 0 0 0 -100 -25 -75 -50
+P 2 0 0 0 -100 150 -100 -150
+P 2 0 0 0 -100 150 100 150
+P 2 0 0 0 -100 -150 100 -150
+P 2 0 0 0 100 -150 200 -37
+P 2 0 0 0 100 150 200 37
+P 2 0 0 0 -12 50 87 -50
+P 2 0 0 0 -12 -50 87 50
+C 37 0 75 0 0 0 N
+C 212 0 37 0 0 0 N
+C 262 0 37 0 0 0 N
+X a  1 -100 50 0 N 50 50 1 1 U
+X b  2 -100 -50 0 N 50 50 1 1 U
+X Q  7 300 0 0 N 50 50 1 1 U
+X com  8 -100 -150 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   schmitt
+#  Behavioral Schmitt-Triggered buffer with complementary outs
+# SpiceModel :  SCHMITT
+#
+DEF schmitt A 0 1 N N 1 F N
+F0 "A" 25 -50 50 H V L CNN
+F1 "schmitt" 25 -375 50 H V L CNN
+DRAW
+P 2 0 0 0 25 -225 50 -225
+P 2 0 0 0 37 -175 62 -175
+P 2 0 0 0 37 -225 37 -175
+P 2 0 0 0 50 -225 50 -175
+P 2 0 0 0 0 -100 200 -200
+P 2 0 0 0 0 -300 200 -200
+P 2 0 0 0 100 -150 200 -150
+P 2 0 0 0 0 -300 0 -100
+P 2 0 0 0 200 -250 187 -250
+C 162 -250 25 0 0 0 N
+X in  1 0 -200 0 N 50 50 1 1 U
+X _Q  6 200 -250 0 N 50 50 1 1 U
+X Q  7 200 -150 0 N 50 50 1 1 U
+X com  8 0 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   schmtbuf
+#  Behavioral Schmitt-Triggered buffer
+# SpiceModel :  SCHMITT
+#
+DEF schmtbuf A 0 1 N N 1 F N
+F0 "A" 25 -100 50 H V L CNN
+F1 "schmtbuf" 25 -325 50 H V L CNN
+DRAW
+P 2 0 0 0 12 -212 37 -212
+P 2 0 0 0 25 -187 50 -187
+P 2 0 0 0 25 -187 25 -212
+P 2 0 0 0 37 -212 37 -187
+P 2 0 0 0 0 -150 125 -200
+P 2 0 0 0 0 -250 125 -200
+P 2 0 0 0 0 -250 0 -150
+P 2 0 0 0 125 -200 200 -200
+X in  1 0 -200 0 N 50 50 1 1 U
+X Q  7 200 -200 0 N 50 50 1 1 U
+X com  8 0 -250 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   schmtinv
+#  Behavioral Schmitt-Triggered inverter
+# SpiceModel :  SCHMITT
+#
+DEF schmtinv A 0 1 N N 1 F N
+F0 "A" 25 -100 50 H V L CNN
+F1 "schmtinv" 25 -325 50 H V L CNN
+DRAW
+P 2 0 0 0 12 -212 37 -212
+P 2 0 0 0 25 -187 50 -187
+P 2 0 0 0 25 -187 25 -212
+P 2 0 0 0 37 -212 37 -187
+P 2 0 0 0 0 -150 125 -200
+P 2 0 0 0 0 -250 125 -200
+P 2 0 0 0 0 -250 0 -150
+P 2 0 0 0 175 -200 200 -200
+C 150 -200 25 0 0 0 N
+X in  1 0 -200 0 N 50 50 1 1 U
+X _Q  6 200 -200 0 N 50 50 1 1 U
+X com  8 0 -250 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   srflop
+#  Behavioral Set-Reset Flipflop
+# SpiceModel :  SRFLOP
+#
+DEF srflop A 0 1 N N 1 F N
+F0 "A" -125 0 50 H V L CNN
+F1 "srflop" -125 -475 50 H V L CNN
+DRAW
+P 2 0 0 0 -150 -50 150 -50
+P 2 0 0 0 -150 -50 -150 -400
+P 2 0 0 0 -150 -400 150 -400
+P 2 0 0 0 150 -400 150 -50
+C 175 -300 25 0 0 0 N
+X S  1 -150 -150 0 R 50 50 1 1 U
+X R  2 -150 -300 0 R 50 50 1 1 U
+X _Q  6 200 -300 0 L 50 50 1 1 U
+X Q  7 150 -150 0 L 50 50 1 1 U
+X com  8 -150 -400 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   xor
+#  Behavioral XOR gate
+# SpiceModel :  XOR
+#
+DEF xor A 0 1 N N 1 F N
+F0 "A" 50 -75 50 H V L CNN
+F1 "xor" 50 -350 50 H V L CNN
+DRAW
+P 2 0 0 0 -112 -300 -87 -300
+P 2 0 0 0 -112 -100 -87 -100
+P 2 0 0 0 37 -150 50 -150
+P 2 0 0 0 -150 -250 -125 -250
+P 2 0 0 0 -150 -200 -112 -200
+P 2 0 0 0 -150 -150 -125 -150
+C 75 -250 25 0 0 0 N
+A -287 -200 175 0 900 0 0 0 N -150 -300 -150 -100
+A -250 -200 175 0 900 0 0 0 N -112 -300 -112 -100
+A -81 -131 168 0 900 0 0 0 N -87 -300 75 -200
+A -81 -268 168 0 900 0 0 0 N 75 -200 -87 -100
+X a  1 -150 -100 0 N 50 50 1 1 U
+X b  2 -150 -150 0 N 50 50 1 1 U
+X c  3 -150 -200 0 N 50 50 1 1 U
+X d  4 -150 -250 0 N 50 50 1 1 U
+X e  5 -150 -300 0 N 50 50 1 1 U
+X _Q  6 100 -250 0 N 50 50 1 1 U
+X Q  7 50 -150 0 N 50 50 1 1 U
+X com  8 -50 -300 0 N 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#

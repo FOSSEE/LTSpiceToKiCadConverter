@@ -1,0 +1,102 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+#   AD5535Bopamp
+#  32-Channel, 14-Bit DAC (one channel, output stage modelled)
+# SpiceModel : 
+#
+DEF AD5535Bopamp X 0 1 N Y 1 F N
+F0 "X" 0 150 50 H V C CNN
+F1 "AD5535Bopamp" 12 -131 50 H V C CNN
+F5 "AD5535Bopamp" 12 -131 50 H I C CNN
+$FPLIST
+ X_*
+$ENDFPLIST
+DRAW
+S -496 446 500 -450 0 0 0 f
+T 0 0 0 50 0 0 1  LT
+X Vdac  2 -500 0 0 R 50 50 1 1 U
+X Vpp  1 0 450 0 D 50 50 1 1 U
+X Vout  3 500 0 0 L 50 50 1 1 U
+X GND  4 0 -450 0 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   AD5679R
+#  16-Channel, 16Bit nanaDAC+ (one channel, output stage modeled)
+# SpiceModel : 
+#
+DEF AD5679R X 0 1 N Y 1 F N
+F0 "X" 0 150 50 H V C CNN
+F1 "AD5679R" 9 -231 50 H V C CNN
+F5 "AD5679R" 9 -231 50 H I C CNN
+$FPLIST
+ X_*
+$ENDFPLIST
+DRAW
+P 2 0 0 0 -500 -450 -500 450
+P 2 0 0 0 300 -450 -500 -450
+P 2 0 0 0 653 3 300 -450
+P 2 0 0 0 300 450 653 3
+P 2 0 0 0 -500 450 300 450
+T 0 0 0 50 0 0 1  ADI
+X Vdac  1 -500 0 0 R 50 50 1 1 U
+X Vdd  2 -100 450 0 D 50 50 1 1 U
+X GND  3 -100 -450 0 U 50 50 1 1 U
+X Vout  4 650 0 0 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   AD5766
+#  16-Channel, 16Bit Voltage Output denseDACs (one channel, output stage modeled)
+# SpiceModel : 
+#
+DEF AD5766 X 0 1 N Y 1 F N
+F0 "X" 0 150 50 H V C CNN
+F1 "AD5766" 9 -206 50 H V C CNN
+F5 "AD5766" 9 -206 50 H I C CNN
+$FPLIST
+ X_*
+$ENDFPLIST
+DRAW
+P 2 0 0 0 -500 -450 -500 450
+P 2 0 0 0 300 -450 -500 -450
+P 2 0 0 0 653 3 300 -450
+P 2 0 0 0 300 450 653 3
+P 2 0 0 0 -500 450 300 450
+T 0 0 0 50 0 0 1  ADI
+X Vdac  1 -500 200 0 R 50 50 1 1 U
+X NO  2 -500 -250 0 R 50 50 1 1 U
+X AVdd  3 100 450 0 D 50 50 1 1 U
+X AVss  4 100 -450 0 U 50 50 1 1 U
+X Vout  5 650 0 0 L 50 50 1 1 U
+X GND  6 -250 -450 0 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#   AD5770R
+#  6-Channel, 14Bit Current Output DACs (one channel, output stage modeled)
+# SpiceModel : 
+#
+DEF AD5770R X 0 1 N Y 1 F N
+F0 "X" 0 150 50 H V C CNN
+F1 "AD5770R" 0 -268 50 H V C CNN
+F5 "AD5770R" 0 -268 50 H I C CNN
+$FPLIST
+ X_*
+$ENDFPLIST
+DRAW
+P 2 0 0 0 -500 -450 -500 450
+P 2 0 0 0 300 -450 -500 -450
+P 2 0 0 0 653 3 300 -450
+P 2 0 0 0 300 450 653 3
+P 2 0 0 0 -500 450 300 450
+T 0 0 0 50 0 0 1  ADI
+X Vdac  1 -500 0 0 R 50 50 1 1 U
+X Iout  2 650 0 0 L 50 50 1 1 U
+X PVdd  3 -100 450 0 D 50 50 1 1 U
+X PVee  4 100 -450 0 U 50 50 1 1 U
+X GND  5 -300 -450 0 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
