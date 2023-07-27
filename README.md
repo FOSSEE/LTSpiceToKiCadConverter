@@ -10,7 +10,7 @@ The repository also contains program to convert LTSpice symbol files(.asy) to Ki
 
 The code is supported by both Windows and Ubuntu(and flavors) Operating System.
 
-
+-----------------------------------------------
 ## Cloning the repo:
 
 To start with, please clone the repository:
@@ -20,6 +20,7 @@ git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
 
 ## Windows OS
 
+-----------------------------------------------
 ### To Convert the Schematic file
 
 1. Make sure python3 is installed and added to the path
@@ -29,6 +30,7 @@ git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
 5. The LTspice schematic is converted to eSim(KiCad) schematic and project files
 6. The files are saved in the src/Windows in a folder created with name ```LTspice_<schematic_name>```
 
+-----------------------------------------------
 ### To Convert the .asy file to .lib file
 
 1. Make sure python3 is installed and added to the path
@@ -49,8 +51,9 @@ For example: LTspice_DAC.lib
 	- Double click on the Batch files
 	- All the converted .lib files will be saved in the src/Windows
 
-## Ubuntu OS
 
+## Ubuntu OS
+-----------------------------------------------
 ### To Convert the Schematic file
 
 1. Make sure python3 is installed and added to the path
@@ -65,6 +68,7 @@ python3 sch_LTspice2Kicad.py "/home/sumanto/Downloads/ltspice/ltspice/27C.asc"
 ```
 5. The files are saved in a folder(in the same path where the original .asc file exists) created with name ```LTspice_<schematic_name>```
 
+-----------------------------------------------
 ### To Convert the .asy file to .lib file
 
 1. Make sure python3 is installed and added to the path
@@ -80,20 +84,24 @@ python3 lib_LTspice2Kicad.py "python3 lib_LTspice2Kicad.py /home/sumanto/Downloa
 The .asy files will be converted and save in src/Ubuntu to a single .lib file with name LTspice_<folder_name>.lib. 
 For example: LTspice_DAC.lib
 
+-----------------------------------------------
 ### Example LTspice Schematics(.asc) and Symbol libraries(.asy)
 The Example LTspice Schematics(.asc) and Symbol Libraries(.asy) are available in the LTspice software.
 
 Please download the software from the official website.
-
+-----------------------------------------------
 ### Converted KiCad Schematics(.sch, .pro, .proj)
 The converted examples are available here.
 
+-----------------------------------------------
 ### Converted KiCad Schematics with eSim Simulation Plots
 The Converted KiCad Schematics with eSim Simulation Plots are available here.
 
+-----------------------------------------------
 ### Converted KiCad Symbol Library files(.lib)
 The converted KiCad Symbol Library files are available here.
 
+-----------------------------------------------
 ### Important Notes/Commands
 **To change the access of the file and folder**
 
