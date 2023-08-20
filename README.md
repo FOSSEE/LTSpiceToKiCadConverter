@@ -103,18 +103,21 @@ The converted KiCad Symbol Library files are available [here](https://github.com
 ## Important Notes/Commands
 **To change the access of the file and folder**
 
-Use this command to change access to the files:
+Use this command to change access to the files:</br>
+	```
+ 	chmod <options> <permissions> <file name>
+  	```
+Example:
+	````
+ 	chmod u=rwx,g=rx,o=r myfile
 	
-	chmod <options> <permissions> <file name>
-	Example:
-	chmod u=rwx,g=rx,o=r myfile
-	
-	You can also use: 
-	
+You can also use: 
+	```	
 	sudo chmod 777 filename.
-	
-	Example: sudo chmod 777 ~/Desktop/convert/rc
-
+	```
+Example: ```
+	sudo chmod 777 ~/Desktop/convert/rc
+```
 -----------------------------------------------
 **To open the KiCad schematic file in eSim** 
 
