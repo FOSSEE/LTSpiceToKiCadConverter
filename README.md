@@ -150,11 +150,14 @@ If all the libraries in eeschema are not loaded, follow these steps:
 - Try adding libraries in the parser.py while getting error.
 - DO NOT CHANGE any of the files unless and until needed.
 
+## eSim Manual
+To know everything about eSim, how it works and it's feature please download the manual from [here](https://static.fossee.in/esim/manuals/eSim_Manual_2.3.pdf)
+
 ## Contact
-For any queries regarding eSim please write us on at this email address.
+For any queries regarding eSim please write us on at this [email address](mailto:contact-esim@fossee.in).
 
 ## Contribution
-Please refer here for further details.
+Please refer [here](https://github.com/FOSSEE/eSim/blob/master/CONTRIBUTION.md) for further details.
 
 # License
 It is developed by FOSSEE Team at IIT Bombay and is released under GNU GPL License.
