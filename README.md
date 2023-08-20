@@ -107,15 +107,15 @@ Use this command to change access to the files:</br>
 	```
  	chmod <options> <permissions> <file name>
   	```
-Example:
+Example:</br>
 	```
  	chmod u=rwx,g=rx,o=r myfile
 	```
-You can also use: 
+You can also use:</br> 
 	```	
 	sudo chmod 777 filename.
 	```
-Example: 
+Example:</br>
 	```
 	sudo chmod 777 ~/Desktop/convert/rc
 	```
