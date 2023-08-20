@@ -90,14 +90,14 @@ The Example LTspice Schematics(.asc) and Symbol Libraries(.asy) are available in
 Please download the software from the official website.
 
 ## Converted KiCad Schematics(.sch, .pro, .proj)
-The converted examples are available here.
+The converted examples are available [here](https://github.com/FOSSEE/LTSpiceToKiCadConverter/tree/main/Examples/ConvertedKiCad_Schematics_no_eSim_Plots).
 
 
 ## Converted KiCad Schematics with eSim Simulation Plots
-The Converted KiCad Schematics with eSim Simulation Plots are available here.
+The Converted KiCad Schematics with eSim Simulation Plots are available [here](https://github.com/FOSSEE/LTSpiceToKiCadConverter/tree/main/Examples/ConvertedKiCadSchematics_witheSimPlots).
 
 ## Converted KiCad Symbol Library files(.lib)
-The converted KiCad Symbol Library files are available here.
+The converted KiCad Symbol Library files are available [here](https://github.com/FOSSEE/LTSpiceToKiCadConverter/tree/main/Examples/ConvertedLibraries).
 
 
 ## Important Notes/Commands
