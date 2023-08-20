@@ -14,9 +14,9 @@ The code is supported by both Windows and Ubuntu(and flavors) Operating System.
 ## Cloning the repo:
 
 To start with, please clone the repository:
-```
-git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
-```
+	```
+	git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
+	```
 
 ## Windows OS
 
@@ -35,19 +35,19 @@ git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
 1. Make sure python3 is installed and added to the path
 2. Switch to src/Windows directory
 3. Run the following command to convert the .asy files contained in a single folder to a .lib file:
-```
-python3 lib_LTspice2Kicad.py <Path to the folder containing the .asy files">
-```
-Example:
-```
-python3 lib_LTspice2Kicad.py "C:\Program Files\LTC\LTspiceXVII\lib\sym\DAC"
-```
-The .asy files will be converted a single .lib file with name LTspice_<folder_name>.lib. 
-For example: LTspice_DAC.lib
-4. To convert many folders containg .asy files:
-	- Edit the path in the ```lib_LTspice2Kicad.bat``` file using a text editor
-	- Save and close it
-	- Double click on the Batch files
+	```
+	python3 lib_LTspice2Kicad.py <Path to the folder containing the .asy files">
+	```
+	Example:
+	```
+	python3 lib_LTspice2Kicad.py "C:\Program Files\LTC\LTspiceXVII\lib\sym\DAC"
+	```
+	The .asy files will be converted a single .lib file with name LTspice_<folder_name>.lib. 
+	For example: LTspice_DAC.lib</br>
+4. To convert many folders containg .asy files:</br>
+	- Edit the path in the ```lib_LTspice2Kicad.bat``` file using a text editor</br>
+	- Save and close it</br>
+	- Double click on the Batch files</br>
 	- All the converted .lib files will be saved in the src/Windows
 
 
@@ -58,14 +58,14 @@ For example: LTspice_DAC.lib
 1. Make sure python3 is installed and added to the path
 2. Switch to src/Ubuntu directory
 3. Run the following command to convert the LTspice(.asc) files to KiCad Schematic(.sch, .pro and .proj) files:
-```
-python3 sch_LTspice2Kicad.py <Path to the .asc file">
-```
-For Example:
-```
-python3 sch_LTspice2Kicad.py "/home/sumanto/Downloads/ltspice/ltspice/27C.asc"
-```
-5. The files are saved in a folder(in the same path where the original .asc file exists) created with name ```LTspice_<schematic_name>```
+    ```
+    python3 sch_LTspice2Kicad.py <Path to the .asc file">
+    ```
+    For Example:
+    ```
+    python3 sch_LTspice2Kicad.py "/home/sumanto/Downloads/ltspice/ltspice/27C.asc"
+    ```
+4. The files are saved in a folder(in the same path where the original .asc file exists) created with name ```LTspice_<schematic_name>```
 
 -----------------------------------------------
 ### To Convert the .asy file to .lib file
@@ -73,15 +73,15 @@ python3 sch_LTspice2Kicad.py "/home/sumanto/Downloads/ltspice/ltspice/27C.asc"
 1. Make sure python3 is installed and added to the path
 2. Switch to src/Ubuntu directory
 3. Run the following command to convert the .asy files contained in a single folder to a .lib file:
-```
-python3 lib_LTspice2Kicad.py <Path to the folder containing the .asy files">
-```
-Example:
-```
-python3 lib_LTspice2Kicad.py "python3 lib_LTspice2Kicad.py /home/sumanto/Downloads/ltspice/libs/DAC"
-```
-The .asy files will be converted and save in src/Ubuntu to a single .lib file with name LTspice_<folder_name>.lib. 
-For example: LTspice_DAC.lib
+	```
+	python3 lib_LTspice2Kicad.py <Path to the folder containing the .asy files">
+	```
+	Example:
+	```
+	python3 lib_LTspice2Kicad.py "python3 lib_LTspice2Kicad.py /home/sumanto/Downloads/ltspice/libs/DAC"
+	```
+	The .asy files will be converted and save in src/Ubuntu to a single .lib file with name LTspice_<folder_name>.lib. 
+	For example: LTspice_DAC.lib
 
 -----------------------------------------------
 ### Example LTspice Schematics(.asc) and Symbol libraries(.asy)
