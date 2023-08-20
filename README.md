@@ -119,7 +119,7 @@ Example:
 	```
 	sudo chmod 777 ~/Desktop/convert/rc
 	```
-</br>
+
 -----------------------------------------------
 **To open the KiCad schematic file in eSim** 
 
