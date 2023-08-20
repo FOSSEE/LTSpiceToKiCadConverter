@@ -13,7 +13,7 @@ The code is supported by both Windows and Ubuntu(and flavors) Operating System.
 
 ## Cloning the repo:
 
-To start with, please clone the repository:
+To start with, please clone the repository:</br>
 	```
 	git clone https://github.com/FOSSEE/LTSpiceToKiCadConverter
 	```
@@ -104,16 +104,16 @@ The converted KiCad Symbol Library files are available [here](https://github.com
 **To change the access of the file and folder**
 
 Use this command to change access to the files:
-
-chmod <options> <permissions> <file name>
-Example:
-chmod u=rwx,g=rx,o=r myfile
-
-You can also use: 
-
-sudo chmod 777 filename.
-
-Example: sudo chmod 777 ~/Desktop/convert/rc
+	
+	chmod <options> <permissions> <file name>
+	Example:
+	chmod u=rwx,g=rx,o=r myfile
+	
+	You can also use: 
+	
+	sudo chmod 777 filename.
+	
+	Example: sudo chmod 777 ~/Desktop/convert/rc
 
 -----------------------------------------------
 **To open the KiCad schematic file in eSim** 
