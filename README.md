@@ -108,16 +108,17 @@ Use this command to change access to the files:</br>
  	chmod <options> <permissions> <file name>
   	```
 Example:
-	````
+	```
  	chmod u=rwx,g=rx,o=r myfile
-	
+	```
 You can also use: 
 	```	
 	sudo chmod 777 filename.
 	```
-Example: ```
+Example: 
+	```
 	sudo chmod 777 ~/Desktop/convert/rc
-```
+	```
 </br>
 -----------------------------------------------
 **To open the KiCad schematic file in eSim** 
